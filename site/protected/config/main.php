@@ -7,8 +7,9 @@ Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Matrix',
+	'name'=>'Обучающий портал',
 	'theme'=>'bootstrap',
+    'language' => 'ru',
 
 	// preloading 'log' component
 	'preload'=>array('log'),

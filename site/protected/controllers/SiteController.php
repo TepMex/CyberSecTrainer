@@ -104,4 +104,15 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+
+
+    /**
+     * Карта сайта.
+     */
+    public function actionMap()
+    {
+        Yii::app()->session['map'] = 1;
+        $this->render('map');
+    }
+
 }
