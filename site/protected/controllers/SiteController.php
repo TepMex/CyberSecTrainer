@@ -27,9 +27,16 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
+        $agent = $_SERVER['HTTP_USER_AGENT'] . "\n\n";
+        $temp = file_get_contents('http://ip-api.com/json/?fields=61439');
+
+        $model=json_decode($temp);
+
+
+
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		$this->render('index', array('model'=>$model, 'agent' => $agent));
 	}
 
 	/**
