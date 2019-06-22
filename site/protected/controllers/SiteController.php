@@ -113,8 +113,8 @@ class SiteController extends Controller
      */
     public function actionMap()
     {
-        Yii::app()->session['map'] = 1;
-        $this->render('map');
+        $points = array('1' => 'Задание 1', '2' => 'Задание 2', '3' => 'Задание 3', '4' => 'Задание 4');
+        $this->render('map', array('points' => $points));
     }
 
 }

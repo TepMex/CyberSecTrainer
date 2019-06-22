@@ -41,9 +41,12 @@
 
 	<div class="clear"></div>
 
-	<div id="footer">
+	<div id="footer" style="position: fixed; right: 0px; left: 0px; bottom: 0; width: 100%; height: 80px;
+	background-color: #f5f5f5; border: 1px solid transparent; border-color: #B9B9B9;">
+        <div class="container" style="padding-right: 15px; padding-left: 15px; color: #777; text-align: center;">
 		Copyright &copy; <?php echo date('Y'); ?> by OmGTU.<br/>
         Все права защищены.<br/>
+        </div>
 	</div><!-- footer -->
 
 </div><!-- page -->
