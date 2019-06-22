@@ -4,5 +4,4 @@ protected/runtime/*
 !protected/runtime/.gitignore
 /nbproject/
 /test/
-*loc*
 .idea/
