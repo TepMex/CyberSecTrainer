@@ -73,12 +73,13 @@
                     /*end*/
                     echo '<div class="col-sm-6 col-md-6">
         <fieldset '.(($point['disabled'])?'disabled':'').'>
-            <div class="thumbnail">
-                <img src="'.$point['img'].'" alt="'.$point['notify'].'" width="300px">
-                <div class="caption">
-                    <h3>'.$point['title'].'</h3>
+            <div class="thumbnail" style="display: block; padding: 4px;margin-bottom: 20px; 
+            line-height: 1.42857143; background-color: #fff; border: 1px solid #ddd; border-radius: 4px;">
+                <img src="'.$point['img'].'" alt="'.$point['notify'].'" width="100%">
+                <div class="caption" style="padding: 9px;">
+                    <h3 style="margin-top: 20px; margin-bottom: 10px;">'.$point['title'].'</h3>
                     <p>'.$point['description'].'</p>
-                    <p><a href="'.$point['link'].'" class="'.$point['cssButton'].'" role="button">Перейти к выполнению</a> 
+                    <p><a href="'.$point['link'].'" class="'.$point['cssButton'].'" role="button" id="focusedInput">Перейти к выполнению</a> 
                     </p>
                 </div>
             </div>
