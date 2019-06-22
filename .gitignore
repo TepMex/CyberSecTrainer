@@ -7,3 +7,5 @@ protected/runtime/*
 *loc*
 .idea/
 .idea
+*.idea
+/*idea/
