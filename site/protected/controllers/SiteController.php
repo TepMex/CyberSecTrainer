@@ -114,7 +114,7 @@ class SiteController extends Controller
     public function actionMap()
     {
         Yii::app()->session['map'] = 1;
-        $this->render('index');
+        $this->render('map');
     }
 
 }
