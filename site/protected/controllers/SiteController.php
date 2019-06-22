@@ -77,26 +77,24 @@ class SiteController extends Controller
 	 */
 	public function actionLogin()
 	{
-		$model=new LoginForm;
+        $agent = $_SERVER['HTTP_USER_AGENT'] . "\n\n";
+        $temp = file_get_contents('http://ip-api.com/json/?fields=61439');
 
-		// if it is ajax validation request
-		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
-		{
-			echo CActiveForm::validate($model);
-			Yii::app()->end();
-		}
+		$model=json_decode($temp);
 
-		// collect user input data
-		if(isset($_POST['LoginForm']))
-		{
-			$model->attributes=$_POST['LoginForm'];
-			// validate user input and redirect to the previous page if valid
-			if($model->validate() && $model->login())
-				$this->redirect(Yii::app()->user->returnUrl);
-		}
-		// display the login form
-		$this->render('login',array('model'=>$model));
+		$this->render('login',array('model'=>$model, 'agent' => $agent));
 	}
+
+	public function actionSaveLogin(){
+	    $result = false;
+
+	    if (isset($_POST) && !empty($_POST['login'])){
+	        Yii::app()->session['LoginUser'] =$_POST['login'];
+	        $result = true;
+        }
+
+	    echo CJSON::encode(['success' => $result]);
+    }
 
 	/**
 	 * Logs out the current user and redirect to homepage.
