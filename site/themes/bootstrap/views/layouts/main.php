@@ -29,7 +29,7 @@
     ),
 )); ?>
 
-<div class="container" id="page">
+<div class="container" id="page" style="margin-bottom: 80px;">
 
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(

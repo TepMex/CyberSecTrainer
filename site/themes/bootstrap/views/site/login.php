@@ -86,7 +86,7 @@ $this->pageTitle=Yii::app()->name . ' - Вход';
         </tbody>
     </table>
 
-    <?= CHtml::link('Хочу знать как защитить себя!', '#', ['class' => 'auth btn btn-success', 'style'=> 'margin-bottom: 10px; horizontal-align:center;']); ?>
+    <?= CHtml::link('Хочу знать как защитить себя!', ['map'], ['class' => 'btn btn-success', 'style'=> 'margin-bottom: 10px; horizontal-align:center;']); ?>
 </div>
 
 <script>
