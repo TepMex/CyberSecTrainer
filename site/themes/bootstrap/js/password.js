@@ -4,13 +4,15 @@ let state = {
     timeEl: null,
     startBtn: null,
     passwordInput: null,
+    pwdTestEl: null,
     
     dictSettings: {
         numbers: true,
         latinCharLow: false,
         latinCharUpp: false,
         specialSymbols: false,
-    }
+    },
+    worker: null
 }
 
 function init()
@@ -18,9 +20,51 @@ function init()
     state.timeEl = document.querySelector("#brute-time")
     state.startBtn = document.querySelector("#start-btn")
     state.passwordInput = document.querySelector("#password")
+    state.pwdTestEl = document.querySelector("#password-test")
     
     state.startBtn.addEventListener("click", onStartBtn)
     state.passwordInput.addEventListener("input", onPasswordInput)
+    
+    //state.worker = run(passwordWorker)
+    
+    //state.worker.onmessage = function(msg){ console.log(msg) }
+    //state.worker.postMessage("sdfa")
+    
+}
+
+function passwordWorker()
+{
+    self.onmessage = function(pwd)
+    {
+        // to service worker
+	let startTime = Date.now()
+
+        for(let sym1 of dict)
+        {
+            for(let sym2 of dict)
+            {
+                for(let sym3 of dict)
+                {
+                    for(let sym4 of dict)
+                    {   
+                        if(Math.floor(Math.random()*1001) === 1000)
+                        {
+                            state.pwdTestEl.value = sym1+sym2+sym3+sym4
+                        }
+                        if(sym1+sym2+sym3+sym4 === pwd)
+                        {
+                            state.pwdTestEl.value = sym1+sym2+sym3+sym4
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        let endTime = Date.now()
+
+        return (endTime-startTime)/1000
+    }
     
 }
 
@@ -71,9 +115,14 @@ function brutePwd(pwd, dict)
 			for(let sym3 of dict)
 			{
 				for(let sym4 of dict)
-				{
+				{   
+                    if(Math.floor(Math.random()*1001) === 1000)
+                    {
+                        state.pwdTestEl.value = sym1+sym2+sym3+sym4
+                    }
 					if(sym1+sym2+sym3+sym4 === pwd)
 					{
+                        state.pwdTestEl.value = sym1+sym2+sym3+sym4
 						break;
 					}
 				}
@@ -114,6 +163,11 @@ function createDict(dictSettings)
 	return dict
 	
 }
+
+function run(fn) {
+  return new Worker(URL.createObjectURL(new Blob(['('+fn+')()'])));
+}
+
 
 
 
