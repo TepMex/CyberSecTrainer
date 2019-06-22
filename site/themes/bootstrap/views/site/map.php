@@ -65,16 +65,16 @@
 
     <div class="container">
         <div class="media-container-row">
-            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+            <div class="row mbr-text counter-container col-12 col-md-12 mbr-fonts-style display-7">
                 <?php
                 foreach ($points as $key => $point) {
                     /* из сессии забирать информацию о прохождении теста*/
                     if(true){$point['cssButton'] = 'btn btn-primary';}else{$point['cssButton'] = 'btn btn-success';}
                     /*end*/
-                    echo '<div class="col-sm-6 col-md-3">
+                    echo '<div class="col-sm-6 col-md-6">
         <fieldset '.(($point['disabled'])?'disabled':'').'>
             <div class="thumbnail">
-                <img src="'.$point['img'].'" alt="'.$point['notify'].'">
+                <img src="'.$point['img'].'" alt="'.$point['notify'].'" width="300px">
                 <div class="caption">
                     <h3>'.$point['title'].'</h3>
                     <p>'.$point['description'].'</p>
