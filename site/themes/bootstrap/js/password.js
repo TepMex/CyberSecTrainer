@@ -4,7 +4,6 @@ let state = {
     timeEl: null,
     startBtn: null,
     passwordInput: null,
-    pwdTestEl: null,
     
     dictSettings: {
         numbers: true,
@@ -20,15 +19,10 @@ function init()
     state.timeEl = document.querySelector("#brute-time")
     state.startBtn = document.querySelector("#start-btn")
     state.passwordInput = document.querySelector("#password")
-    state.pwdTestEl = document.querySelector("#password-test")
     
     state.startBtn.addEventListener("click", onStartBtn)
     state.passwordInput.addEventListener("input", onPasswordInput)
     
-    //state.worker = run(passwordWorker)
-    
-    //state.worker.onmessage = function(msg){ console.log(msg) }
-    //state.worker.postMessage("sdfa")
     
 }
 
@@ -47,13 +41,9 @@ function passwordWorker()
                 {
                     for(let sym4 of dict)
                     {   
-                        if(Math.floor(Math.random()*1001) === 1000)
-                        {
-                            state.pwdTestEl.value = sym1+sym2+sym3+sym4
-                        }
+                  
                         if(sym1+sym2+sym3+sym4 === pwd)
                         {
-                            state.pwdTestEl.value = sym1+sym2+sym3+sym4
                             break;
                         }
                     }
@@ -116,13 +106,8 @@ function brutePwd(pwd, dict)
 			{
 				for(let sym4 of dict)
 				{   
-                    if(Math.floor(Math.random()*1001) === 1000)
-                    {
-                        state.pwdTestEl.value = sym1+sym2+sym3+sym4
-                    }
 					if(sym1+sym2+sym3+sym4 === pwd)
 					{
-                        state.pwdTestEl.value = sym1+sym2+sym3+sym4
 						break;
 					}
 				}
