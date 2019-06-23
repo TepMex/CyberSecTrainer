@@ -25,15 +25,19 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item dropdown">
-                    <a class="nav-link link text-white dropdown-toggle display-4" href="index.html" data-toggle="dropdown-submenu" aria-expanded="false"><span class="mbri-rocket mbr-iconfont mbr-iconfont-btn" style="color: rgb(255, 51, 102);"></span>
-                        Ступени</a><div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="#">0. Компьютерная грамотность</a><a class="text-white dropdown-item display-4" href="page1.html">1. Основы кибербезопасности</a><a class="text-white dropdown-item display-4" href="#">2. Защита личности в сети</a><a class="text-white dropdown-item display-4" href="#">3. Безопасность онлайн платежей</a></div>
+                    <a class="nav-link link text-white dropdown-toggle display-4" href="index.html" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mbri-rocket mbr-iconfont mbr-iconfont-btn" style="color: rgb(255, 51, 102);"></span>
+                        Ступени</a><div class="dropdown-menu">
+                        <a class="text-white dropdown-item display-4" href="#">0. Компьютерная грамотность</a>
+                        <a class="text-white dropdown-item display-4" href="<?= Yii::app()->createAbsoluteUrl('site/map'); ?>">1. Основы кибербезопасности</a>
+                        <a class="text-white dropdown-item display-4" href="#">2. Защита личности в сети</a>
+                        <a class="text-white dropdown-item display-4" href="#">3. Безопасность онлайн платежей</a></div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="index.html"><span class="mbri-idea mbr-iconfont mbr-iconfont-btn" style="color: rgb(255, 51, 102);"></span>
-                        
+                    <a class="nav-link link text-white display-4" href="<?= Yii::app()->createAbsoluteUrl('site/index'); ?>"><span class="mbri-idea mbr-iconfont mbr-iconfont-btn" style="color: rgb(255, 51, 102);"></span>
+
                         О проекте</a>
                 </li></ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="index.html"><span class="mbri-lock mbr-iconfont mbr-iconfont-btn"></span>
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="#"><span class="mbri-lock mbr-iconfont mbr-iconfont-btn"></span>
                     <?= Yii::app()->session['LoginUser']; ?></a></div>
         </div>
     </nav>
@@ -71,7 +75,7 @@
                 <div class="card-wrapper ">
                     <div class="card-img">
                         <div class="mbr-overlay"></div>
-                        <div class="mbr-section-btn text-center"><a href="level1.html" class="btn btn-primary display-4">Начать</a></div>
+                        <div class="mbr-section-btn text-center"><a href="<?= Yii::app()->createAbsoluteUrl('site/map'); ?>" class="btn btn-primary display-4">Начать</a></div>
                         <img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/images/mbr-1046x697.jpg" alt="0" title="">
                     </div>
                     <div class="card-box">
@@ -91,7 +95,7 @@
                     </div>
                     <div class="card-box">
                         <h4 class="card-title mbr-fonts-style display-7">ступень 1
- "Компьютерная грамотность"</h4>
+ "Основы Кибербезопасности"</h4>
                         <p class="mbr-text mbr-fonts-style display-7">
                            Вы изучите основные правила для безопасной работы в сети.<br><a href="<?= Yii::app()->createAbsoluteUrl('site/map'); ?>">Начать</a><br></p>
                     </div>
@@ -113,7 +117,7 @@
                 <div class="card-wrapper ">
                     <div class="card-img">
                         <div class="mbr-overlay"></div>
-                        <div class="mbr-section-btn text-center"><a href="level1.html" class="btn btn-primary display-4">Начать</a></div>
+                        <div class="mbr-section-btn text-center"><a href="<?= Yii::app()->createAbsoluteUrl('site/map'); ?>" class="btn btn-primary display-4">Начать</a></div>
                         <img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/images/mbr-1046x674.jpg" alt="3" title="">
                     </div>
                     <div class="card-box">
@@ -127,7 +131,7 @@
                 <div class="card-wrapper">
                     <div class="card-img">
                         <div class="mbr-overlay"></div>
-                        <div class="mbr-section-btn text-center"><a href="level1.html" class="btn btn-primary display-4">Начать</a></div>
+                        <div class="mbr-section-btn text-center"><a href="<?= Yii::app()->createAbsoluteUrl('site/map'); ?>" class="btn btn-primary display-4">Начать</a></div>
                         <img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/images/mbr-4-1046x697.jpg" alt="3" title="">
                     </div>
                     <div class="card-box">
