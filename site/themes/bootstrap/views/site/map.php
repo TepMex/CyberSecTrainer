@@ -79,7 +79,11 @@
                 <div class="caption" style="padding: 9px;">
                     <h3 style="margin-top: 20px; margin-bottom: 10px;">'.$point['title'].'</h3>
                     <p>'.$point['description'].'</p>
-                    <p><a href="'.$point['link'].'" class="'.$point['cssButton'].'" role="button" id="focusedInput">Перейти к выполнению</a> 
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="'.$point['progress'].'" aria-valuemin="0" aria-valuemax="100" style="width: '.$point['progress'].'%">
+                      </div>
+                    </div>
+                    <p><a href="'.$point['link'].'" class="'.$point['cssButton'].'" role="button">Перейти к выполнению</a> 
                     </p>
                 </div>
             </div>

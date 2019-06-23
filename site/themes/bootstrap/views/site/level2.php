@@ -61,6 +61,91 @@
 
 </section>
 
+
+
+<section class="mbr-section content7 cid-ru7a6eU9JJ" id="content7-b">
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-12 col-md-8">
+                <div class="media-container-row">
+                    <div class="media-content">
+                        <div class="mbr-section-text">
+                            <p class="mbr-text align-right mb-0 mbr-fonts-style display-7"><strong>МЕНЕДЖЕРЫ ПАРОЛЕЙ,</strong><br>
+                                <strong>ИСПОЛЬЗУЙ, ЧТО БЫ ЗАЩИТИТЬСЯ</strong><br><strong><br></strong><br>Менеджер паролей — программное обеспечение, которое помогает пользователю работать с паролями и PIN-кодами. У подобного программного обеспечения обычно имеется местная база данных или файлы, которые содержат зашифрованные данные пароля. Многие менеджеры паролей также работают как заполнитель формы, то есть они заполняют поле пользователь и данные пароля автоматически в формах. Обычно они реализованы как расширение браузера.</p>
+                        </div>
+                    </div>
+                    <div class="mbr-figure" style="width: 80%;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNqRpVNraMssDFw3eEWf2p1WjLi6dp6fohgddDwoWtTF5SwMvH" alt="1" title="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="mbr-section content7 cid-ru7a5wOkTw" id="content7-a">
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-12 col-md-8">
+                <div class="media-container-row">
+                    <div class="media-content">
+                        <div class="mbr-section-text">
+                            <p class="mbr-text align-right mb-0 mbr-fonts-style display-7"><strong>ПРОИЗВОДИТ ЗАЩИТУ ОТ АТАК В СЕТИ</strong><strong><br></strong><br>Менеджеры паролей могут также использоваться как защита от фишинга. В отличие от людей, программа менеджер паролей может обращаться с автоматизированным скриптом логина невосприимчиво к визуальным имитациям, которые похожи на веб-сайты, то есть, перейдя по сомнительной ссылке на фишинговый сайт менеджер паролей не подставит логин-пароль в формы ввода, а пользователь поймёт, что сайт является подделкой.</p>
+                        </div>
+                    </div>
+                    <div class="mbr-figure" style="width: 80%;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8neVa-P-7xphzeMy-f870EDz0FAPWtAsQcfBl-0Z16M7rSA6L" alt="2" title="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="mbr-section content7 cid-ru7a6eU9JJ" id="content7-b">
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-12 col-md-8">
+                <div class="media-container-row">
+                    <div class="media-content">
+                        <div class="mbr-section-text">
+                            <p class="mbr-text align-right mb-0 mbr-fonts-style display-7">
+                                <strong>ВСТРОЕННЫЕ ПРИЕМУЩЕСТВА</strong>
+                                <br><strong><br></strong><br>С этим встроенным преимуществом использование менеджера паролей выгодно, даже если у пользователя имеется всего несколько паролей, которые он помнит. Однако не все менеджеры паролей могут автоматически обращаться с более сложными процедурами идентификации, наложенными многими банковскими веб-сайтами.</p>
+                        </div>
+                    </div>
+                    <div class="mbr-figure" style="width: 80%;">
+                        <img src="https://ocompah.ru/wp-content/uploads/2016/11/why-you-need-manager-passwords-ocompah.ru-00.jpg" alt="3" title="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="mbr-section content7 mbr-parallax-background" id="content7-b" style="padding: 70px">
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-12 col-md-8">
+                <div class="media-container-row">
+                    <div class="mbr-section-text"><strong>Для закрепления информации о пройденном задании, выполните мини задание.</strong></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
 <section class="mbr-section article content11 cid-ru7TXATUeN" id="content11-n" style="padding-bottom: 700px;">
 
     <div class="igra_pamyat">
@@ -153,7 +238,28 @@
                         $('.igra_pamyat div').each(function(){
                             $(this).data('state',0).attr('data-state',0).css('backgroundImage', 'none');
                         });
-                        alert('Your click '+count_all_click);
+                        var procent = 0;
+                        if(count_all_click>10 &&count_all_click<=30){alert('Вы очень хорошо подобрали пароли для всех сервисов, количество попыток: '+count_all_click
+                            +'. Но пользуюясь менеджером паролей, вам нужно будет знать всего один сложный пароль, что бы держать остальные пароли в секрете');
+                            procent = 100;}
+                        if(count_all_click>30 &&count_all_click<=60){alert('Вы неплохо заполминаете пароли, количество попыток: '+count_all_click
+                            +'. Но пользуюясь менеджером паролей, вам нужно будет знать всего один сложный пароль, что бы держать остальные пароли в секрете');
+                            procent = 60;}
+                        if(count_all_click>60){alert('Что бы помнить все пароли, вам необходимо пользоваться менеджером паролей, количество попыток: '+count_all_click);
+                            procent = 30;}
+
+                        $.ajax({
+                            url: "<?= Yii::app()->createAbsoluteUrl('site/saveResult'); ?>",
+                            type: 'post',
+                            dataType: 'json',
+                            data: {progress: procent, level: 2},
+                            success : function(responce) {
+                                if (responce.success) {
+
+                                }
+                            }
+                        });
+                        count_all_click = 0;
                     }
                     count_click = 0;
                 }
