@@ -63,7 +63,7 @@
                     Вы уверены в своей защищённости в сети?
                 </p>
                 <div class="mbr-section-btn align-center"><a class="btn btn-md btn-primary display-4" href="index.html#form3-5"><span class="socicon socicon-zynga mbr-iconfont mbr-iconfont-btn"></span>
-                        ДА</a> <a class="btn btn-md btn-secondary display-4" href="index.html#content7-e"><span class="socicon socicon-github mbr-iconfont mbr-iconfont-btn"></span>
+                        ДА</a> <a class="btn btn-md btn-secondary display-4" href="index.html#content7-f"><span class="socicon socicon-github mbr-iconfont mbr-iconfont-btn"></span>
                         НЕТ</a></div>
             </div>
         </div>
@@ -264,6 +264,10 @@
             </div>
         </div>
     </div>
+</section>
+
+<section class="mbr-section content8 cid-ru7nnIrAZV" id="content7-f">
+
 </section>
 
 <section class="mbr-section content8 cid-ru7nnIrAZV" id="content8-f">
