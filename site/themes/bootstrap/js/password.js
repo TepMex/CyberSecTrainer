@@ -10,7 +10,8 @@ let state = {
         latinCharLow: false,
         latinCharUpp: false,
         specialSymbols: false,
-    }
+    },
+    worker: null
 }
 
 function init()
@@ -21,6 +22,39 @@ function init()
     
     state.startBtn.addEventListener("click", onStartBtn)
     state.passwordInput.addEventListener("input", onPasswordInput)
+    
+    
+}
+
+function passwordWorker()
+{
+    self.onmessage = function(pwd)
+    {
+        // to service worker
+	let startTime = Date.now()
+
+        for(let sym1 of dict)
+        {
+            for(let sym2 of dict)
+            {
+                for(let sym3 of dict)
+                {
+                    for(let sym4 of dict)
+                    {   
+                  
+                        if(sym1+sym2+sym3+sym4 === pwd)
+                        {
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        let endTime = Date.now()
+
+        return (endTime-startTime)/1000
+    }
     
 }
 
@@ -71,7 +105,7 @@ function brutePwd(pwd, dict)
 			for(let sym3 of dict)
 			{
 				for(let sym4 of dict)
-				{
+				{   
 					if(sym1+sym2+sym3+sym4 === pwd)
 					{
 						break;
@@ -114,6 +148,11 @@ function createDict(dictSettings)
 	return dict
 	
 }
+
+function run(fn) {
+  return new Worker(URL.createObjectURL(new Blob(['('+fn+')()'])));
+}
+
 
 
 

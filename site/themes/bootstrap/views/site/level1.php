@@ -1,3 +1,4 @@
+<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/password.js"></script>
 
 <section class="menu cid-qTkzRZLJNu" once="menu" id="menu1-k">
 
@@ -26,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item dropdown">
                     <a class="nav-link link text-white dropdown-toggle display-4" href="index.html" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mbri-rocket mbr-iconfont mbr-iconfont-btn" style="color: rgb(255, 51, 102);"></span>
-                        Ступени</a><div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="#">0. Компьютерная грамотность</a><a class="text-white dropdown-item display-4" href="page1.html">1. Основы кибербезопасности</a><a class="text-white dropdown-item display-4" href="#">2. Защита личности в сети</a><a class="text-white dropdown-item display-4" href="#">3. Безопасность онлайн платежей</a></div>
+                        Ступени</a><div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="#">0. Компьютерная грамотность</a><a class="text-white dropdown-item display-4" href="page1.html">Мини-игра: надёжный пароль</a><a class="text-white dropdown-item display-4" href="#">2. Защита личности в сети</a><a class="text-white dropdown-item display-4" href="#">3. Безопасность онлайн платежей</a></div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="index.html"><span class="mbri-idea mbr-iconfont mbr-iconfont-btn" style="color: rgb(255, 51, 102);"></span>
@@ -34,7 +35,7 @@
                         О проекте</a>
                 </li></ul>
             <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="index.html"><span class="mbri-lock mbr-iconfont mbr-iconfont-btn"></span>
-                    <?= Yii::app()->session['LoginUser']; ?></a></div>
+                    <?= Yii::app()->session['LoginUser'];  ?></a></div>
         </div>
     </nav>
 </section>
@@ -50,7 +51,7 @@
         <div class="row justify-content-md-center">
             <div class="mbr-white col-md-10">
                 <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1">
-                    1. Основы Кибербезопасности</h1>
+                    Мини-игра: надёжный пароль</h1>
 
 
 
@@ -65,32 +66,14 @@
 
     <div class="container">
         <div class="media-container-row">
-            <div class="row mbr-text counter-container col-12 col-md-12 mbr-fonts-style display-7">
-                <?php
-                foreach ($points as $key => $point) {
-                    /* из сессии забирать информацию о прохождении теста*/
-                    if(true){$point['cssButton'] = 'btn btn-primary';}else{$point['cssButton'] = 'btn btn-success';}
-                    /*end*/
-                    echo '<div class="col-sm-6 col-md-6">
-        <fieldset '.(($point['disabled'])?'disabled':'').'>
-            <div class="thumbnail" style="display: block; padding: 4px;margin-bottom: 20px; 
-            line-height: 1.42857143; background-color: #fff; border: 1px solid #ddd; border-radius: 4px;">
-                <img src="'.$point['img'].'" alt="'.$point['notify'].'" width="100%">
-                <div class="caption" style="padding: 9px;">
-                    <h3 style="margin-top: 20px; margin-bottom: 10px;">'.$point['title'].'</h3>
-                    <p>'.$point['description'].'</p>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="'.$point['progress'].'" aria-valuemin="0" aria-valuemax="100" style="width: '.$point['progress'].'%">
-                      </div>
-                    </div>
-                    <p><a href="'.$point['link'].'" class="'.$point['cssButton'].'" role="button">Перейти к выполнению</a> 
-                    </p>
-                </div>
-            </div>
-        </fieldset>
-    </div>';
-                }
-                ?>
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <input type="text" id="password" maxlength="4" />
+                Цифры: <input type="checkbox" dict-type="numbers" readonly />
+                Строчные буквы: <input type="checkbox" dict-type="latinCharLow" readonly />
+                Прописные буквы: <input type="checkbox" dict-type="latinCharUpp" readonly />
+                Специальные символы(!,@,$,...):<input type="checkbox" dict-type="specialSymbols" readonly />
+                <button id="start-btn">Ломаем!</button>
+                <p>Вашему компьютеру нужно меньше <span id="brute-time">10</span> секунд чтобы угадать этот пароль</p>
             </div>
         </div>
     </div>

@@ -100,7 +100,7 @@
         </div>
     </div>
 </section>
-<div class="mainblock" hidden="hidden">
+<div id="mainblock" style="display:none">
 <section class=" mbr-section content4 cid-ru6TiSxJEJ" id="content4-7" >
     <div class="container">
         <div class="media-container-row">
@@ -273,7 +273,7 @@
     <div class="container">
         <div class="media-container-row title">
             <div class="col-12 col-md-8">
-                <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="index.html">НАЧАТЬ</a></div>
+                <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="<?= Yii::app()->createAbsoluteUrl('site/map'); ?>">НАЧАТЬ</a></div>
             </div>
         </div>
     </div>
@@ -406,7 +406,7 @@
         var user = $('#username').val();
         if (user !== "") {
             $(".alert1").html('<h3>Мы знаем где ты:)) ' + user + '</h3>'  );
-            $(".mainblock").show();
+            document.getElementById("mainblock").style.display = "block";
 
             $.ajax({
                 url: "<?= Yii::app()->createAbsoluteUrl('site/saveLogin'); ?>",
