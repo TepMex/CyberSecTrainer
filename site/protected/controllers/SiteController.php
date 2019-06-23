@@ -133,7 +133,7 @@ class SiteController extends Controller
                     'notify' => 'Задание 2',
                     //'img' => 'http://cdn.droidtune.com/wp-content/uploads/2014/09/%D0%9B%D1%83%D1%87%D1%88%D0%B8%D0%B5-%D0%BC%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80%D1%8B-%D0%BF%D0%B0%D1%80%D0%BE%D0%BB%D0%B5%D0%B9.png',
                     'img' => 'https://www.it.mk/wp-content/uploads/2019/01/create-and-store-passwords-securely-blog.png',
-                    'link' => '2.php',
+                    'link' => Yii::app()->createAbsoluteUrl('site/level2'),
                     'disabled' => 0),
             '3' =>
                 array('title' => 'Задание 3',
@@ -172,6 +172,12 @@ class SiteController extends Controller
 
 
         $this->render('level1');
+    }
+
+    public function actionLevel2()
+    {
+
+        $this->render('level2');
     }
 
 }
