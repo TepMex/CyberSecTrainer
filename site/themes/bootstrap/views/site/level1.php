@@ -1,4 +1,5 @@
 <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/password.js"></script>
+<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/level1Game.js"></script>
 
 <section class="menu cid-qTkzRZLJNu" once="menu" id="menu1-k">
 
@@ -61,23 +62,199 @@
 
 </section>
 
-<section class="mbr-section article content11 cid-ru7TXATUeN" id="content11-n">
 
+<section class="mbr-section content7 cid-ru7a6eU9JJ" id="content7-b">
 
     <div class="container">
         <div class="media-container-row">
+            <div class="col-12 col-md-8">
+                <div class="media-container-row">
+                    <div class="media-content">
+                        <div class="mbr-section-text">
+                            <p class="mbr-text align-right mb-0 mbr-fonts-style display-7"><strong>МЕНЕДЖЕРЫ ПАРОЛЕЙ,</strong><br>
+                                <strong>ИСПОЛЬЗУЙ, ЧТО БЫ ЗАЩИТИТЬСЯ</strong><br><strong><br></strong><br>Менеджер паролей — программное обеспечение, которое помогает пользователю работать с паролями и PIN-кодами. У подобного программного обеспечения обычно имеется местная база данных или файлы, которые содержат зашифрованные данные пароля. Многие менеджеры паролей также работают как заполнитель формы, то есть они заполняют поле пользователь и данные пароля автоматически в формах. Обычно они реализованы как расширение браузера.</p>
+                        </div>
+                    </div>
+                    <div class="mbr-figure" style="width: 80%;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNqRpVNraMssDFw3eEWf2p1WjLi6dp6fohgddDwoWtTF5SwMvH" alt="1" title="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="mbr-section content7 cid-ru7a5wOkTw" id="content7-a">
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-12 col-md-8">
+                <div class="media-container-row">
+                    <div class="media-content">
+                        <div class="mbr-section-text">
+                            <p class="mbr-text align-right mb-0 mbr-fonts-style display-7"><strong>ПРОИЗВОДИТ ЗАЩИТУ ОТ АТАК В СЕТИ</strong><strong><br></strong><br>Менеджеры паролей могут также использоваться как защита от фишинга. В отличие от людей, программа менеджер паролей может обращаться с автоматизированным скриптом логина невосприимчиво к визуальным имитациям, которые похожи на веб-сайты, то есть, перейдя по сомнительной ссылке на фишинговый сайт менеджер паролей не подставит логин-пароль в формы ввода, а пользователь поймёт, что сайт является подделкой.</p>
+                        </div>
+                    </div>
+                    <div class="mbr-figure" style="width: 80%;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8neVa-P-7xphzeMy-f870EDz0FAPWtAsQcfBl-0Z16M7rSA6L" alt="2" title="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="mbr-section content7 cid-ru7a6eU9JJ" id="content7-b">
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-12 col-md-8">
+                <div class="media-container-row">
+                    <div class="media-content">
+                        <div class="mbr-section-text">
+                            <p class="mbr-text align-right mb-0 mbr-fonts-style display-7">
+                                <strong>ВСТРОЕННЫЕ ПРИЕМУЩЕСТВА</strong>
+                                <br><strong><br></strong><br>С этим встроенным преимуществом использование менеджера паролей выгодно, даже если у пользователя имеется всего несколько паролей, которые он помнит. Однако не все менеджеры паролей могут автоматически обращаться с более сложными процедурами идентификации, наложенными многими банковскими веб-сайтами.</p>
+                        </div>
+                    </div>
+                    <div class="mbr-figure" style="width: 80%;">
+                        <img src="https://ocompah.ru/wp-content/uploads/2016/11/why-you-need-manager-passwords-ocompah.ru-00.jpg" alt="3" title="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+<section class="mbr-section article content11 cid-ru7TXATUeN" id="content11-n">
+
+    <div class="container jumbotron">
+        <div class="media-container-row">
             <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
-                <input type="text" id="password" maxlength="4" />
-                Цифры: <input type="checkbox" dict-type="numbers" readonly />
-                Строчные буквы: <input type="checkbox" dict-type="latinCharLow" readonly />
-                Прописные буквы: <input type="checkbox" dict-type="latinCharUpp" readonly />
-                Специальные символы(!,@,$,...):<input type="checkbox" dict-type="specialSymbols" readonly />
-                <button id="start-btn">Ломаем!</button>
+                <strong>Определить насколько быстро ваш пароль может быть взломан</strong><br/><br/>
+                <input type="text" id="password" maxlength="4" placeholder="4 символа" class="form-control" />
+                Цифры: <input type="checkbox" dict-type="numbers" readonly /><br />
+                Строчные буквы: <input type="checkbox" dict-type="latinCharLow" readonly /><br />
+                Прописные буквы: <input type="checkbox" dict-type="latinCharUpp" readonly /><br />
+                Специальные символы(!,@,$,...):<input type="checkbox" dict-type="specialSymbols" readonly /><br />
+                <button id="start-btn" >Ломаем!</button>
                 <p>Вашему компьютеру нужно меньше <span id="brute-time">10</span> секунд чтобы угадать этот пароль</p>
             </div>
         </div>
     </div>
 </section>
+
+
+<section class="mbr-section article content11 cid-ru7TXATUeN" id="content11-n">
+
+    <div class="container jumbotron">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <strong>Что бы закрепить полученные в задание знания, попробуйте придумать свой пароль из 10-20 символов</strong>
+                <br /><br />
+                <div class="form-group">
+                    <input type="text" class="form-control result_password" id="result_password" placeholder="10-20 символов"><br />
+                    <input type="button" class="result_btn" value="Проверить пароль">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    $(document).on('keyup', '.result_password', function() {
+        var $select = $(this);
+        var text = $select.val();
+        if(text.length > 10){
+            $select.css({'box-shadow': '0 0 0 0.2rem rgba(0,255,0,.25)'});
+        }else{
+            $select.css({'box-shadow':'0 0 0 0.2rem rgba(0,123,255,.25)'});
+        }
+        if(text.length > 20){
+            $select.val(text.substring(0, text.length - 1))
+        }
+
+    });
+
+    $(document).on('click', '.result_btn', function() {
+
+        checkPassword();
+
+    });
+
+    function checkPassword() {
+        var password = document.getElementById('result_password').value; // Получаем пароль из формы
+        console.log(password);
+        var s_letters = "qwertyuiopasdfghjklzxcvbnm"; // Буквы в нижнем регистре
+        var b_letters = "QWERTYUIOPLKJHGFDSAZXCVBNM"; // Буквы в верхнем регистре
+        var digits = "0123456789"; // Цифры
+        var specials = "!@#$%^&*()_-+=\|/.,:;[]{}"; // Спецсимволы
+        var is_s = false; // Есть ли в пароле буквы в нижнем регистре
+        var is_b = false; // Есть ли в пароле буквы в верхнем регистре
+        var is_d = false; // Есть ли в пароле цифры
+        var is_sp = false; // Есть ли в пароле спецсимволы
+        for (var i = 0; i < password.length; i++) {
+            /* Проверяем каждый символ пароля на принадлежность к тому или иному типу */
+            if (!is_s && s_letters.indexOf(password[i]) != -1) is_s = true;
+            else if (!is_b && b_letters.indexOf(password[i]) != -1) is_b = true;
+            else if (!is_d && digits.indexOf(password[i]) != -1) is_d = true;
+            else if (!is_sp && specials.indexOf(password[i]) != -1) is_sp = true;
+        }
+        var rating = 0;
+        var text = "";
+        if (is_s) rating++; // Если в пароле есть символы в нижнем регистре, то увеличиваем рейтинг сложности
+        if (is_b) rating++; // Если в пароле есть символы в верхнем регистре, то увеличиваем рейтинг сложности
+        if (is_d) rating++; // Если в пароле есть цифры, то увеличиваем рейтинг сложности
+        if (is_sp) rating++; // Если в пароле есть спецсимволы, то увеличиваем рейтинг сложности
+        /* Далее идёт анализ длины пароля и полученного рейтинга, и на основании этого готовится текстовое описание сложности пароля */
+
+        if (password.length < 10 && rating < 3) text = "Простой";
+        else if (password.length < 10 && rating >= 3) text = "Средний";
+        else if (password.length >= 15 && rating < 3) text = "Средний";
+        else if (password.length >= 15 && rating >= 3) text = "Сложный";
+        else if (password.length >= 10 && rating == 1) text = "Простой";
+        else if (password.length >= 10 && rating > 1 && rating < 4) text = "Средний";
+        else if (password.length >= 10 && rating == 4) text = "Сложный";
+        var result_rating = 0;
+        if (password.length < 10 && rating < 3) result_rating = 30;
+        else if (password.length < 10 && rating >= 3) result_rating = 60;
+        else if (password.length >= 15 && rating < 3) result_rating = 60;
+        else if (password.length >= 15 && rating >= 3) result_rating = 100;
+        else if (password.length >= 10 && rating == 1) result_rating = 30;
+        else if (password.length >= 10 && rating > 1 && rating < 4) result_rating = 60;
+        else if (password.length >= 10 && rating == 4) result_rating = 100;
+        text = 'Ваш пароль соответствует уровню : "' + text + '". ';
+
+        if(result_rating == 30){text = text + '\n НЕ стоит использовать пароли такого типаю'}
+        if(result_rating == 60){text = text + '\n Такой пароль имеет более сильную устойчивость к взлому, но не является совершенством.'}
+        if(result_rating == 100){text = text + '\n Такой пароль можно использовать без боязни, что хакер смогут взломать его перебором'}
+        $.ajax({
+            url: "<?= Yii::app()->createAbsoluteUrl('site/saveResult'); ?>",
+            type: 'post',
+            dataType: 'json',
+            data: {progress: result_rating, level: 1},
+            success : function(responce) {
+                if (responce.success) {
+
+                }
+            }
+        });
+
+        alert(text);
+    }
+
+</script>
+
 
 <section once="footers" class="cid-ru7qItbVxn" id="footer7-l">
 
