@@ -61,9 +61,9 @@ function checkPassword() {
     else if (password.length >= 10 && rating == 4) result_rating = 100;
     text = 'Ваш пароль соответствует уровню : "' + text + '". ';
 
-    if(result_rating == 30){text = text + '\n НЕ стоит использовать пароли такого типаю'}
-    if(result_rating == 60){text = text + '\n Такой пароль имеет более сильную устойчивость к взлому, но не является совершенством.'}
-    if(result_rating == 100){text = text + '\n Такой пароль можно использовать без боязни, что хакер смогут взломать его перебором'}
+    if(result_rating == 30){text = text + '\nНЕ стоит использовать пароли такого типаю'}
+    if(result_rating == 60){text = text + '\nТакой пароль имеет более сильную устойчивость к взлому, но не является совершенством.'}
+    if(result_rating == 100){text = text + '\nТакой пароль можно использовать без боязни, что хакер смогут взломать его перебором'}
     $.ajax({
         url: "<?= Yii::app()->createAbsoluteUrl('site/saveResult'); ?>",
         type: 'post',

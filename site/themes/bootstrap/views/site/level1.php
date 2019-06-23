@@ -71,12 +71,12 @@
                 <div class="media-container-row">
                     <div class="media-content">
                         <div class="mbr-section-text">
-                            <p class="mbr-text align-right mb-0 mbr-fonts-style display-7"><strong>МЕНЕДЖЕРЫ ПАРОЛЕЙ,</strong><br>
-                                <strong>ИСПОЛЬЗУЙ, ЧТО БЫ ЗАЩИТИТЬСЯ</strong><br><strong><br></strong><br>Менеджер паролей — программное обеспечение, которое помогает пользователю работать с паролями и PIN-кодами. У подобного программного обеспечения обычно имеется местная база данных или файлы, которые содержат зашифрованные данные пароля. Многие менеджеры паролей также работают как заполнитель формы, то есть они заполняют поле пользователь и данные пароля автоматически в формах. Обычно они реализованы как расширение браузера.</p>
+                            <p class="mbr-text align-right mb-0 mbr-fonts-style display-7"><strong>Формируйте надежные пароли</strong><br><strong><br></strong>
+                                <br>Пароли создают реальную угрозу безопасности. Как показало недавнее исследование, более 80% связанных со взломами утечек данных происходят из-за ненадежных или украденных паролей. Так что если вы хотите защитить свои персональные данные и активы, первым делом следует сформировать надежные пароли.</p>
                         </div>
                     </div>
                     <div class="mbr-figure" style="width: 80%;">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNqRpVNraMssDFw3eEWf2p1WjLi6dp6fohgddDwoWtTF5SwMvH" alt="1" title="">
+                        <img src="http://pro-java.ru/wp-content/uploads/2018/04/generator-parolei-gde-sozdati-nadejnyi-paroli-pro-java-ru.png" alt="1" title="">
                     </div>
                 </div>
             </div>
@@ -94,11 +94,12 @@
                 <div class="media-container-row">
                     <div class="media-content">
                         <div class="mbr-section-text">
-                            <p class="mbr-text align-right mb-0 mbr-fonts-style display-7"><strong>ПРОИЗВОДИТ ЗАЩИТУ ОТ АТАК В СЕТИ</strong><strong><br></strong><br>Менеджеры паролей могут также использоваться как защита от фишинга. В отличие от людей, программа менеджер паролей может обращаться с автоматизированным скриптом логина невосприимчиво к визуальным имитациям, которые похожи на веб-сайты, то есть, перейдя по сомнительной ссылке на фишинговый сайт менеджер паролей не подставит логин-пароль в формы ввода, а пользователь поймёт, что сайт является подделкой.</p>
+                            <p class="mbr-text align-right mb-0 mbr-fonts-style display-7"><strong>Лучшие советы по паролям от профессионалов</strong><strong><br></strong>
+                                <br>Обязательно используйте уникальный пароль для каждой новой учетной записи. Опасность использования одинаковых паролей заключается в том, что в случае компрометации одного сайта хакерам будет легче попытаться использовать ту же комбинацию имени пользователя и пароля на других веб-сайтах.</p>
                         </div>
                     </div>
                     <div class="mbr-figure" style="width: 80%;">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8neVa-P-7xphzeMy-f870EDz0FAPWtAsQcfBl-0Z16M7rSA6L" alt="2" title="">
+                        <img src="http://it-uroki.ru/wp-content/uploads/2017/04/5-pravil-nadejnogo-parolya-01-256.png" alt="2" title="">
                     </div>
                 </div>
             </div>
@@ -117,12 +118,12 @@
                     <div class="media-content">
                         <div class="mbr-section-text">
                             <p class="mbr-text align-right mb-0 mbr-fonts-style display-7">
-                                <strong>ВСТРОЕННЫЕ ПРИЕМУЩЕСТВА</strong>
-                                <br><strong><br></strong><br>С этим встроенным преимуществом использование менеджера паролей выгодно, даже если у пользователя имеется всего несколько паролей, которые он помнит. Однако не все менеджеры паролей могут автоматически обращаться с более сложными процедурами идентификации, наложенными многими банковскими веб-сайтами.</p>
+                                <strong>Советы по паролям от профессионалов</strong>
+                                <br><strong><br></strong><br>Никогда не передавайте свои пароли с помощью электронной почты или SMS-сообщений. Для безопасной передачи паролей следует использовать такой инструмент, как LastPass, позволяющий поделиться паролем, не раскрывая его, и отозвать доступ к нему, когда потребуется.</p>
                         </div>
                     </div>
                     <div class="mbr-figure" style="width: 80%;">
-                        <img src="https://ocompah.ru/wp-content/uploads/2016/11/why-you-need-manager-passwords-ocompah.ru-00.jpg" alt="3" title="">
+                        <img src="http://it-uroki.ru/wp-content/uploads/2017/04/slozhniy-parol-06-256.png" alt="3" title="">
                     </div>
                 </div>
             </div>
