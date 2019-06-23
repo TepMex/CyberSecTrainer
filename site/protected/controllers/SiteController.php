@@ -185,16 +185,18 @@ class SiteController extends Controller
         echo CJSON::encode(['success' => $result]);
     }
 
+    public function actionCourses()
+    {
+        $this->render('courses');
+    }
+
     public function actionLevel1()
     {
-
-
         $this->render('level1');
     }
 
     public function actionLevel2()
     {
-
         $this->render('level2');
     }
 

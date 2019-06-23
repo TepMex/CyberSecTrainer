@@ -273,7 +273,7 @@
     <div class="container">
         <div class="media-container-row title">
             <div class="col-12 col-md-8">
-                <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="<?= Yii::app()->createAbsoluteUrl('site/map'); ?>">НАЧАТЬ</a></div>
+                <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="<?= Yii::app()->createAbsoluteUrl('site/courses'); ?>">НАЧАТЬ</a></div>
             </div>
         </div>
     </div>
