@@ -35,7 +35,7 @@
                         О проекте</a>
                 </li></ul>
             <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="index.html"><span class="mbri-lock mbr-iconfont mbr-iconfont-btn"></span>
-                    Вход</a></div>
+                    <?= Yii::app()->session['LoginUser'];  ?></a></div>
         </div>
     </nav>
 </section>
